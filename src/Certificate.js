@@ -56,7 +56,7 @@ const Certificate = () => {
         {/* Verified */}
         <div className="verified">
           <span>✔</span>
-          <p>Your Certificate is Verified</p>
+          <p>Your Certificate Is Verified</p>
         </div>
 
       </div>
