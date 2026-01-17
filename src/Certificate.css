@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  min-height: 100vh;
+  background: #f2f4f7;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+.certificate {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border: 2px solid #3b6ea5;
+  padding: 20px;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+/* Watermark */
+.watermark {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  opacity: 0.07;
+  z-index: 0;
+}
+
+/* Header */
+.uttc {
+  text-align: center;
+  color: #3b6ea5;
+  letter-spacing: 4px;
+  font-size: clamp(22px, 5vw, 28px);
+}
+
+hr {
+  margin: 8px 0;
+}
+
+.heading {
+  text-align: center;
+  font-size: clamp(13px, 4vw, 16px);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Fields */
+.field {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 14px;
+}
+
+.field label {
+  display: block;
+  color: #3b6ea5;
+  font-size: clamp(12px, 3.5vw, 14px);
+  margin-bottom: 4px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #3b6ea5;
+  border-radius: 6px;
+  font-size: clamp(13px, 3.8vw, 15px);
+  background: #fff;
+}
+
+/* Photo */
+.photo-section {
+  text-align: center;
+  margin-top: 22px;
+  position: relative;
+  z-index: 1;
+}
+
+.photo-section img {
+  width: 35%;
+  max-width: 140px;
+  min-width: 90px;
+  border: 2px solid #ccc;
+}
+
+.photo-section p {
+  margin-top: 6px;
+  font-size: clamp(12px, 3.5vw, 14px);
+}
+
+/* Verified */
+.verified {
+  text-align: center;
+  margin-top: 18px;
+  color: purple;
+  font-weight: bold;
+  font-size: clamp(14px, 4vw, 16px);
+}
+
+.verified span {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .certificate {
+    max-width: 520px;
+    padding: 24px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .certificate {
+    max-width: 640px;
+  }
+}
